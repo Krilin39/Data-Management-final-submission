@@ -8,3 +8,11 @@ The future aim is for the unity platform to make changes and experience the tool
 
 
 The earing design tool is a project of IAAC, Institute for Advanced Architecture of Catalonia developed in the Master In Advanced Computation For Architecture & Design 2021/2022 by student: Erida Bendo and Faculty: David Andres Leon, Hesham Shawqy.
+
+Made by Alexander lopez
+
+Personal information
+https://www.linkedin.com/in/alexander-lopez-navarro-33386613a/
+
+Work Examples
+https://www.youtube.com/channel/UCN040l-G4eRr6Z96o1WWfMg
