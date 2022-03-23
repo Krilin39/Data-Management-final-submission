@@ -6,7 +6,7 @@ import { RhinoCompute } from "https://cdn.jsdelivr.net/npm/compute-rhino3d@0.13.
 import { Rhino3dmLoader } from "https://cdn.jsdelivr.net/npm/three@0.124.0/examples/jsm/loaders/3DMLoader.js";
 
 const definitionName =  "Ear ring.gh" ;//"GH rhinocompute test 1.gh"; // "twisting-pole.gh" "rnd_node.gh" "Operating Theather test1.gh" ;
-const model = 'Sydney test1 mesh map reduced.3dm'
+const model = 'Photogrametry model.3dm'
 
 let scene, camera, renderer, controls;
 
