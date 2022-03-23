@@ -2,13 +2,84 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>S1 - Lecture 3</title>
+        <title>RhinoCompute: GH SubD Object</title>
+        <style>
+            body { margin: 0; font-family: Arial, Helvetica, sans-serif; }
+            input {width: 90%;}
+            #container {position: relative;}
+            #overlay {z-index: 1; width: 100%}
+
+            #loader {
+                border: 5px solid #f3f3f3; /* Light grey */
+                border-top: 5px solid #3d3d3d; /* Grey */
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                animation: spin 1s linear infinite;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: 2;
+            }
+
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+            
+            body { margin: 0; }
+
+			/* CSS for a spinning animation */ 
+			#loader {
+                border: 5px solid #f3f3f3; /* Light grey */
+                border-top: 5px solid #c22f2f; /* Grey */
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                animation: spin 1s linear infinite;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+
+           
+            /* style user strings pop-up */
+            #container {
+                position: absolute;
+                z-index: 100;
+                top: 0;
+                margin: 100px;
+                padding: 10px;
+                background-color: rgb(97, 97, 97);
+                color: white;
+                width: 250px;
+                font-family: monospace;
+            }
+
+            table { border: none; border-collapse: collapse; }
+            table td {
+                border-left: 1px solid white;
+                padding: 10px;
+            }
+            table td:first-child { border-left: none; }
+
+        </style>
     </head>
     <body>
-        <h1>S1 - Lecture 3</h1>
-        <ul>
-            <li><a href="./example1/">Example 1</a> – How to call RhinoCompute</li>
-            <li><a href="./example2/">Example 2</a> – Remote Solving GH Definitions</li>
-        </ul>
+        <div id="loader"></div> 
+        <div id="container">
+            <div id="overlay">
+                <div>
+                    <input type="range" id="count" name="count" min="1" max="11" value="6" step="1">
+                    <label for="count">Amount</label>
+                </div>
+                <div>
+                    <input type="range" id="radius" name="radius" min="1" max="20" value="5" step="0.1">
+                    <label for="radius">Width</label>
+                </div>
+
+            </div>
+        </div>
+        <script type="module" src="script.js"></script>
     </body>
 </html>
